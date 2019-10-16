@@ -1,0 +1,82 @@
+.main-wrapper
+    display: grid
+    margin: 0 auto
+    justify-items: center
+    align-items: center
+    width: 100vw
+    height: 100vh
+    background-color: $third-color
+
+.main-content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-content: center
+    margin: 30px
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: 0 0 25px 8px rgba(0,0,0,0.15)
+    max-width: 800px
+
+.page-intro
+    grid-column: 1/-1
+    border-top:
+        left-radius: 10px
+        right-radius: 10px
+    background-color: white
+    >.title
+        margin-bottom: 32px
+        font-size: 25px
+        color: $primary-darker-color
+    >.subtitle
+        margin-bottom: 15px
+        color: $secondary-color
+        font-size: 18px
+    >.text
+        line-height: 25px
+        color: $fourth-color
+    
+.price-info
+    border-bottom-left-radius: 10px
+    background-color: $primary-darker-color
+    .title
+        @extend .-secondary
+    .price
+        margin-right: 10px
+        color: white
+        font:
+            size: 2rem
+            weight: 700
+    .period
+        color: $third-color
+    .text
+        display: block
+        margin-top: 10px
+        margin-bottom: 25px
+        color: $third-color
+    .btn
+        color: white
+        padding: 15px 0px
+        width: 100%
+        border-radius: 5px
+        box-shadow: 0px 20px 30px -20px rgba(0,0,0,8)
+        cursor: pointer
+        background-color: $secondary-color
+.about-company
+    border-bottom-right-radius: 10px
+    background-color: $primary-color
+    .title
+        @extend .-secondary
+    .list
+        color: $third-color
+
+@media screen and(max-width: 580px)
+    .main-wrapper
+        height: 100%
+    .main-content
+        grid-template-columns: 1fr
+    
+    .price-info
+        border-radius: 0px
+    
+    .about-company
+        border-bottom-left-radius: 10px
