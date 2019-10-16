@@ -1,0 +1,24 @@
+{
+  "name": "single-price-grid",
+  "description": "This a challange from beta.frontendmentor.io",
+  "main": "gulpfile.js",
+  "authors": [
+    "Lucas Gomes <lucasgomes_tl@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LucasGomestl/challange-single-price-grid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  },
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  }
+}
